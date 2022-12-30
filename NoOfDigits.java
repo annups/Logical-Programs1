@@ -2,21 +2,20 @@ package com;
 
 import java.util.Scanner;
 
-public class SumOfDigits {
+public class NoOfDigits {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner ip=new Scanner(System.in);
 		System.out.println("enter a number : ");
 		int n=ip.nextInt();
-		int sum=0,rem=0;
+		int count=0;
 		while(n!=0) {
-			rem=n%10;
-			sum+=rem;
+			count++;
 			n=n/10;
 		}
-		System.out.println("sum of digits : "+sum);
+		System.out.println("no of digits : "+count);
 
 	}
-
 
 }
